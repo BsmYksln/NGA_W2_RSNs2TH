@@ -20,5 +20,12 @@ Directories and Files:
 	|===>	'NGA_W2_RSN_2_TH.py' : It is the main script for downloading the RSNs with given credentials
 	|
 	|===>	'Example.py' : It is an example which uses all utilities to download given TH according to RSNs
-	
 
+Requiered Libraries:
+--------------------
+	numpy
+	selenium
+	pickle
+	requests
+	
+P.S.: This code only compatible with Windows OS.
