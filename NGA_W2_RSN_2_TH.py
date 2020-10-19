@@ -3,7 +3,7 @@ import sys
 import os
 import time
 import random
-from local_configs.utilities import download_wait
+from local_configs.utilities import *
 
 def go_to_sign_in_page(Download_Dir):
 	ChromeOptions = webdriver.ChromeOptions()
