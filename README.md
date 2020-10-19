@@ -12,7 +12,7 @@ Directories and Files:
 	|		|
 	|		|===>	'install_chromedriver.py' : Install and add the "chromedriver.exe" to the "...\Lib\site-packages" path.
 	|		|
-	|		|===>	'utilities.py' : '.py' script contains useful functions.
+	|		|===>	'utilities.py' : '.py' script contains a function which controls the download.
 	|		|
 	|		|===>	'user_configurations.py' :	'.py' script contains functions to read or add existing user and find the credentials of existing user.
 	|											
