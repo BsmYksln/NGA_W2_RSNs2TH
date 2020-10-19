@@ -1,5 +1,5 @@
 # NGA-West2-RSNs-2-TH
-This library has been created as a web automation tool in order to download unscaled record time histories from NGA-West2 Database (https://ngawest2.berkeley.edu/) by their Record Sequence Numbers (RSNs).
+This library has been created as a web automation tool in order to download unscaled record time histories from NGA-West2 Database (https://ngawest2.berkeley.edu/) by Record Sequence Numbers (RSNs).
 
 Directories and Files:
 ----------------------
@@ -20,3 +20,5 @@ Directories and Files:
 	|===>	'NGA_W2_RSN_2_TH.py' : It is the main script for downloading the RSNs with given credentials
 	|
 	|===>	'Example.py' : It is an example which uses all utilities to download given TH according to RSNs
+	
+
