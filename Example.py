@@ -9,6 +9,7 @@ Herein an example of use of NGA_W2_RSN_2_TH library
 """
 
 cwd = os.getcwd()
+DOWNLOAD_DIR = os.getcwd()
 local_dirs = os.listdir(f'{cwd}\\local_configs')
 
 # Select User
