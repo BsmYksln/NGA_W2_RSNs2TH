@@ -13,7 +13,7 @@ def go_to_sign_in_page(Download_Dir):
 	path_of_driver = [i for i in sys.path if 'lib\\site-packages' in i][0] + '\\chromedriver.exe'
 	if not os.path.exists(path_of_driver):
 		print('Downloading the chromedriver!!')
-		import install_chromedriver
+		from local_configs import install_chromedriver
 		install_chromedriver.seek_and_download()
 	driver = webdriver.Chrome(executable_path = path_of_driver ,options=ChromeOptions)
 	url_sign_in = 'https://ngawest2.berkeley.edu/users/sign_in'
