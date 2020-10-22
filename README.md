@@ -7,10 +7,10 @@ Directories and Files:
 	|===>	'\\local_configs'
 	|		|
 	|		|===>	'User_Config.conf' : This file contains the peer account information.
-	|		|			   [In first run it might not be exists.If so, please continue with, function 'add_new_user' from user_configurations.py]
+	|		|			   [In first run it might not be exists. If so, please continue with, function 'add_new_user' from user_configurations.py]
 	|		|			   !!!! Note that conf file stores the data as basic encoding system please do not obey on this security. !!!!
 	|		|
-	|		|===>	'install_chromedriver.py' : Install and add the "chromedriver.exe" to the "...\Lib\site-packages" path.
+	|		|===>	'install_chromedriver.py' : Install and add the "chromedriver.exe" to the "...\Lib\..." path.
 	|		|
 	|		|===>	'utilities.py' : '.py' script contains a function which controls the download.
 	|		|
@@ -28,4 +28,4 @@ Requiered Libraries:
 	pickle
 	requests
 	
-P.S.: This code only compatible with Windows OS.
+P.S.: This code only tested on Windows OS. However, it should be compatible with Windows, Linux, and Mac OS.
