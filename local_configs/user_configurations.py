@@ -5,7 +5,7 @@ import os
 def read_user_conf():
 	cwd = os.getcwd()
 	if 'local_configs' not in cwd:
-		os.chdir(f'{cwd}\\local_configs')
+		os.chdir(os.path.join(cwd,'local_configs'))
 	with open('User_Config.conf', 'rb') as handle:
 		USER_CONFIG_ENCODED = pkl.load(handle)
 	USER_NAMES = [base64.b64decode(i[0]).decode('utf-8') for i in USER_CONFIG_ENCODED]
@@ -18,8 +18,7 @@ def read_user_conf():
 def add_new_user():
 	cwd = os.getcwd()
 	if 'local_configs' not in cwd:
-		os.chdir(f'{cwd}\\local_configs')
-
+		os.chdir(os.path.join(cwd,'local_configs'))
 	NEW_USERNAME = input('username (email) : ')
 	PASSWORD = input('Password : ')
 	SAVE_CONFIG = input('Would you like to your credentials to be saved? (1/0): ')
@@ -39,7 +38,6 @@ def add_new_user():
 			with open('User_Config.conf', 'wb') as f:
 				pkl.dump(ALL_CREDENTIALS_ENCODED, f)
 	os.chdir(cwd)
-
 	return NEW_USERNAME, PASSWORD
 
 def find_the_user(USER_NAMES,PASSWORDS):
