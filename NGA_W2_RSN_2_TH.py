@@ -23,6 +23,9 @@ def go_to_sign_in_page(Download_Dir):
 	ChromeOptions = webdriver.ChromeOptions()
 	prefs = {"download.default_directory" : Download_Dir}
 	ChromeOptions.add_experimental_option("prefs",prefs)
+	ChromeOptions.add_argument('--hide-scrollbars')
+	ChromeOptions.add_argument('--disable-gpu')
+	ChromeOptions.add_argument('--log-level=3')
 	ChromeOptions.headless = True
 	if 'win' in sys.platform:
 		aim_driver = 'chromedriver.exe'
