@@ -9,8 +9,8 @@ if len(RSNs_lines) > 1:
 else:
     RSNs = [int(RSN) for RSN in RSNs_lines[0].split(',')]
 
-usr = 'roledi1998@labebx.com'
-pwd = '123456789'
+usr = 'username@mail.com'
+pwd = 'Pa$$word'
 
 
 NGA = NGA_W2_RSNs2TH(usr, pwd)

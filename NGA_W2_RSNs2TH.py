@@ -1,3 +1,12 @@
+"""
+NGA_W2_RSNs2TH
+
+Module for web automation tool in order to download unscaled record time histories from
+NGA-West2 Database (https://ngawest2.berkeley.edu/) by Record Sequence Numbers (RSNs)
+                                                        Besim Yukselen - 2020
+                                                        Last Major Update: 12/05/2021
+"""
+
 import sys
 import os
 import time
