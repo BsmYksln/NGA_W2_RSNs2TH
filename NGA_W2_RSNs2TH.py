@@ -77,7 +77,10 @@ class NGA_W2_RSNs2TH:
             This function will add chromedriver to the path and authorise if needed.
             Later the zip file contains chromedriver will be deleted.
             """
-            site_package_dirs = [i for i in sys.path if 'site-packages' in i][0]
+            try:
+                site_package_dirs = [i for i in sys.path if 'site-packages' in i][0]
+            except IndexError:
+                site_package_dirs = [i for i in sys.path if 'dist-packages' in i][0]
             with zipfile.ZipFile(save_path, 'r') as zip_ref:
                 zip_ref.extractall(site_package_dirs)
             print('chromedriver downloaded successfully!!')
