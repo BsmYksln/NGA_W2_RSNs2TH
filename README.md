@@ -12,7 +12,7 @@ Files:
 	|
 	|===>	'vertical_RSNs.txt' : It is an example text file contains RSNs in column-like order.
 
-Requiered Libraries:
+Required Libraries:
 --------------------
 	requests
 	selenium
