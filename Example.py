@@ -12,5 +12,6 @@ else:
 usr = 'roledi1998@labebx.com'
 pwd = '123456789'
 
+
 NGA = NGA_W2_RSNs2TH(usr, pwd)
 NGA.RSNs_2_TH(RSNs)

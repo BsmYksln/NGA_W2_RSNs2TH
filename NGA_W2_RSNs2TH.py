@@ -24,7 +24,10 @@ class NGA_W2_RSNs2TH:
         elif self.op_sys.startswith('darwin'):
             self.aim_driver = 'chromedriver'
             self.zip_name_extension = '_mac64'
-        self.path_of_driver = os.path.join([i for i in sys.path if 'site-packages' in i][0], self.aim_driver)
+        try:
+            self.path_of_driver = os.path.join([i for i in sys.path if 'site-packages' in i][0], self.aim_driver)
+        except IndexError:
+            self.path_of_driver = os.path.join([i for i in sys.path if 'dist-packages' in i][0], self.aim_driver)
         self.check_and_download_chrome()
         # Initiate driver in headless mode
         self.driver_opt = webdriver.ChromeOptions()
