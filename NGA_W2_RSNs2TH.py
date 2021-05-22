@@ -232,10 +232,3 @@ class NGA_W2_RSNs2TH:
         os.rename(os.path.join(self.download_path, new_file), os.path.join(self.download_path, new_name))
         print(f'Download has done!\nFiles can be found:\n{os.path.join(self.download_path, new_name)}')
 
-# TODO: Add example.py
-
-
-# usr = 'roledi1998@labebx.com'
-# pwd = '123456789'
-# a = NGA_W2_RSNs2TH(usr, pwd)
-# a.RSNs_2_TH([1])
